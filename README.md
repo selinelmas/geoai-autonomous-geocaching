@@ -25,5 +25,5 @@ Game Routes and Maps:
 You can download the HTML files in this repository to explore the interactive maps:
 - [Stage 1: Taksim Square to Galata Tower](https://selinelmas.github.io/geoai-autonomous-geocaching/GeoAI%20Project/asama1.html)
 - [Stage 2: Galata Tower to Pera Museum](https://selinelmas.github.io/geoai-autonomous-geocaching/GeoAI%20Project/asama2.html)
-- [Stage 3: Pera Museum to Flower Passage](https://selinelmas.github.io/geoai-autonomous-geocaching/GeoAI%20Project/asama3.html)
-- [Final Stage: Flower Passage to Kilic Ali Pasha Mosque](https://selinelmas.github.io/geoai-autonomous-geocaching/GeoAI%20Project/asama4.html)
+- [Stage 3: Pera Museum to Cicek Pasaji](https://selinelmas.github.io/geoai-autonomous-geocaching/GeoAI%20Project/asama3.html)
+- [Final Stage: Cicek Pasaji to Kilic Ali Pasha Mosque](https://selinelmas.github.io/geoai-autonomous-geocaching/GeoAI%20Project/asama4.html)

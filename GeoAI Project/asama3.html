@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_82b59f91d3cb5e8d251e908d6a0e4ecf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_82b59f91d3cb5e8d251e908d6a0e4ecf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_82b59f91d3cb5e8d251e908d6a0e4ecf = L.map(
+                "map_82b59f91d3cb5e8d251e908d6a0e4ecf",
+                {
+                    center: [41.03305, 28.9761],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8799b9374a2f8905960fd8ab377d53db = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8799b9374a2f8905960fd8ab377d53db.addTo(map_82b59f91d3cb5e8d251e908d6a0e4ecf);
+        
+    
+            var poly_line_e47aaf1f308d7fcae05ebb4c802d29df = L.polyline(
+                [[41.0314305, 28.9747103], [41.0326309, 28.9750924], [41.0332433, 28.9751737], [41.0337667, 28.9761492], [41.0340003, 28.9766219], [41.0340067, 28.9766353], [41.0344163, 28.9774719]],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gold", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_82b59f91d3cb5e8d251e908d6a0e4ecf);
+        
+    
+            poly_line_e47aaf1f308d7fcae05ebb4c802d29df.bindTooltip(
+                `<div>
+                     3. Aşama Rotası
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        function geo_json_bee2b335fd63d34a8b3d4d25fb66b82b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "gold", "fillOpacity": 0.2, "weight": 2};
+            }
+        }
+
+        function geo_json_bee2b335fd63d34a8b3d4d25fb66b82b_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_bee2b335fd63d34a8b3d4d25fb66b82b = L.geoJson(null, {
+                onEachFeature: geo_json_bee2b335fd63d34a8b3d4d25fb66b82b_onEachFeature,
+            
+                style: geo_json_bee2b335fd63d34a8b3d4d25fb66b82b_styler,
+            ...{
+}
+        });
+
+        function geo_json_bee2b335fd63d34a8b3d4d25fb66b82b_add (data) {
+            geo_json_bee2b335fd63d34a8b3d4d25fb66b82b
+                .addData(data);
+        }
+            geo_json_bee2b335fd63d34a8b3d4d25fb66b82b_add({"bbox": [28.975022105623413, 41.032499437804454, 28.97977788949331, 41.03610056157283], "features": [{"bbox": [28.975022105623413, 41.032499437804454, 28.97977788949331, 41.03610056157283], "geometry": {"coordinates": [[[28.97977788949331, 41.03425916278223], [28.979761150017897, 41.03408287386331], [28.979721671627907, 41.03390867620281], [28.979659834692594, 41.03373824739262], [28.97957623489004, 41.033573228716754], [28.97947167746448, 41.03341520934629], [28.979347169466294, 41.033265711036734], [28.9792039100495, 41.03312617347488], [28.979043278920397, 41.0329979404162], [28.978866823048747, 41.03288224674652], [28.978676241769424, 41.03278020659181], [28.9784733704181, 41.03269280259129], [28.978260162658536, 41.03262087643646], [28.978038671671452, 41.0325651207673], [28.977811030386217, 41.03252607250367], [28.977579430945266, 41.032504107675926], [28.97734610359903, 41.032499437804454], [28.97711329523429, 41.032512107863205], [28.976883247742443, 41.032541995846515], [28.976658176435816, 41.032588813943555], [28.97644024871954, 41.03265211130907], [28.976231563224193, 41.03273127840372], [28.976034129599967, 41.032825552862576], [28.97584984916662, 41.032934026834695], [28.975680496605634, 41.03305565572389], [28.975527702870533, 41.033189268246204], [28.975392939480127, 41.033333577707246], [28.97527750434572, 41.0334871943913], [28.975182509269008, 41.03364863894252], [28.97510886923104, 41.03381635660986], [28.975057293575546, 41.03398873221822], [28.975028279171884, 41.03416410572206], [28.975022105623413, 41.034340788191564], [28.975038832567922, 41.03451707807744], [28.97507829909623, 41.034691277597815], [28.97514012529491, 41.034861709089306], [28.975223715898487, 41.03502673116485], [28.975328266016234, 41.03518475452273], [28.975452768878622, 41.035334257254206], [28.975596025528983, 41.03547379950255], [28.975756656367334, 41.03560203733218], [28.97593311443509, 41.03571773567396], [28.976123700312982, 41.03581978022235], [28.97632657848861, 41.03590718816926], [28.976539795035972, 41.03597911767157], [28.976761296436624, 41.03603487596066], [28.976988949361015, 41.036073926015945], [28.977220561219426, 41.03609589173827], [28.97745390128423, 41.03610056157283], [28.97768672217987, 41.03608789054711], [28.977916781533406, 41.036058000703925], [28.978141863576663, 41.03601117992559], [28.978359800491923, 41.03594787916041], [28.978568493295064, 41.03586870807832], [28.978765932055097, 41.03577442919756], [28.978950215254876, 41.03566595053895], [28.97911956810661, 41.035544316878784], [28.97927235964561, 41.035410699684384], [28.97940711843745, 41.03526638582968], [28.97952254674755, 41.03511276519923], [28.979617533036464, 41.03495131730052], [28.979691162660874, 41.03478359701326], [28.979742726677205, 41.03461121961324], [28.979771728663405, 41.03443584521483], [28.97977788949331, 41.03425916278223]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_bee2b335fd63d34a8b3d4d25fb66b82b.addTo(map_82b59f91d3cb5e8d251e908d6a0e4ecf);
+        
+    
+            var marker_d28023d8f0a44cde1662e7cb01490b63 = L.marker(
+                [41.0318, 28.9748],
+                {
+}
+            ).addTo(map_82b59f91d3cb5e8d251e908d6a0e4ecf);
+        
+    
+            var icon_af729901d8340dd83b7cf9675a3e21c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7418350324e7d98b5a4fb69d2229cd7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98842f45cdb00738c4a62c61f77fca26 = $(`<div id="html_98842f45cdb00738c4a62c61f77fca26" style="width: 100.0%; height: 100.0%;">Pera Müzesi (Eski Konum)</div>`)[0];
+                popup_7418350324e7d98b5a4fb69d2229cd7e.setContent(html_98842f45cdb00738c4a62c61f77fca26);
+            
+        
+
+        marker_d28023d8f0a44cde1662e7cb01490b63.bindPopup(popup_7418350324e7d98b5a4fb69d2229cd7e)
+        ;
+
+        
+    
+    
+                marker_d28023d8f0a44cde1662e7cb01490b63.setIcon(icon_af729901d8340dd83b7cf9675a3e21c9);
+            
+    
+            var marker_1cd219181119a4c0682151e7b957cb07 = L.marker(
+                [41.0343, 28.9774],
+                {
+}
+            ).addTo(map_82b59f91d3cb5e8d251e908d6a0e4ecf);
+        
+    
+            var icon_edee99f32162fc60d104287887c693f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6553c2f81bce41fda00363b40793808 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40353043c84501c1a0b4bf3e59be6a02 = $(`<div id="html_40353043c84501c1a0b4bf3e59be6a02" style="width: 100.0%; height: 100.0%;">Çiçek Pasajı</div>`)[0];
+                popup_e6553c2f81bce41fda00363b40793808.setContent(html_40353043c84501c1a0b4bf3e59be6a02);
+            
+        
+
+        marker_1cd219181119a4c0682151e7b957cb07.bindPopup(popup_e6553c2f81bce41fda00363b40793808)
+        ;
+
+        
+    
+    
+                marker_1cd219181119a4c0682151e7b957cb07.setIcon(icon_edee99f32162fc60d104287887c693f0);
+            
+    
+            tile_layer_8799b9374a2f8905960fd8ab377d53db.addTo(map_82b59f91d3cb5e8d251e908d6a0e4ecf);
+        
+    
+            geo_json_bee2b335fd63d34a8b3d4d25fb66b82b.addTo(map_82b59f91d3cb5e8d251e908d6a0e4ecf);
+        
+    
+                marker_d28023d8f0a44cde1662e7cb01490b63.setIcon(icon_af729901d8340dd83b7cf9675a3e21c9);
+            
+    
+                marker_1cd219181119a4c0682151e7b957cb07.setIcon(icon_edee99f32162fc60d104287887c693f0);
+            
+</script>
+</html>

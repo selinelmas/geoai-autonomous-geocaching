@@ -1,3 +1,4 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/selinelmas/geoai-autonomous-geocaching/blob/main/GeoAI%20Project/geoai_geocaching.ipynb)
 # geoai-autonomous-geocaching
 An autonomous geospatial hunt agent in Istanbul.
 GeoAI Autonomous Geocaching Agent

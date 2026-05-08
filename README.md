@@ -27,3 +27,5 @@ You can download the HTML files in this repository to explore the interactive ma
 - [Stage 2: Galata Tower to Pera Museum](https://selinelmas.github.io/geoai-autonomous-geocaching/GeoAI%20Project/asama2.html)
 - [Stage 3: Pera Museum to Cicek Pasaji](https://selinelmas.github.io/geoai-autonomous-geocaching/GeoAI%20Project/asama3.html)
 - [Final Stage: Cicek Pasaji to Kilic Ali Pasha Mosque](https://selinelmas.github.io/geoai-autonomous-geocaching/GeoAI%20Project/asama4.html)
+
+- [Click here to watch the GeoAI Demo Video](https://drive.google.com/drive/folders/1mXwTzl4E2fnJ5Rov2PFSWcWrmySr9FWk?usp=drive_link))
